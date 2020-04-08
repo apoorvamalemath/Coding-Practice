@@ -31,12 +31,9 @@ Testcase 2: 3 Largest element in the array are 50, 30 and 23.
 
 #code
 def Find (ele,no):
-    ele.sort()
-    no=len(ele)-no
-    l=ele[no:]
-    #print(no)
-    l.sort(reverse=True)
-    print(' '.join(map(str, l)))
+    arr.sort(reverse = True)
+    for i in range(no):
+        print (arr[i], end =" ")
 
 #Find([12, 5, 787, 1, 23],2)
 #Find([1, 23, 12, 9, 30, 2, 50],3)
